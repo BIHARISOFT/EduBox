@@ -24,11 +24,13 @@ const App=()=> {
     const moveAllValRight = () => {
         setFirstSelectList([]);
         setSecondSelectList([...firstSelectList, ...secondSelectList]);
+ setCurrentSelectedListNm(() => (''));
     };
     const moveAllValLeft = () => {
 
         setSecondSelectList([]);
         setFirstSelectList([...firstSelectList, ...secondSelectList]);
+        setCurrentSelectedListNm(() => (''));
 
     };
 
