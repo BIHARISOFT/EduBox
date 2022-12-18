@@ -1,55 +1,9 @@
 import { useState } from 'react';
 import './App.css';
-
-const selectOptionOne = [
-    {
-        Name: 'Krishna',
-        value: 'God'
-    },
-    {
-        Name: 'Tiger',
-        value: 'Animal'
-    },
-    {
-        Name: 'Ram',
-        value: 'Load'
-    },
-    {
-        Name: 'Mountan',
-        value: 'Solid'
-    },
-    {
-        Name: 'Tree',
-        value: 'Life'
-    }
-
-];
-const selectOptionTwo = [
-    {
-        Name: 'Hanuman',
-        value: 'GodLover'
-    },
-    {
-        Name: 'Sita',
-        value: 'Goddes'
-    },
-    {
-        Name: 'Laptop',
-        value: 'Material'
-    },
-    {
-        Name: 'Shiva',
-        value: 'Creater'
-    },
-    {
-        Name: 'Buddha',
-        value: 'KnowledgeOfPeace'
-    }
-
-];
+import { selectOptionOne, selectOptionTwo } from './JsonData';
 
 
-function App() {
+const App=()=> {
 
 
     const [firstSelectList, setFirstSelectList] = useState(selectOptionOne);
