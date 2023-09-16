@@ -1,24 +1,41 @@
-import logo from './logo.svg';
 import './App.css';
+import React, {  useState } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import GlobelContext from './GlobalContext/GlobalContext';
+import MyCart from './pages/MyCart';
+import ShowPopup from './pages/ShowPopup';
+function App()
+{
+    const [cartValue, setCartValue] = useState([]);
+    const [showPopupBox, setShowPopupBox] = useState("");
 
-function App() {
+    const ClosePopupBox = (props) => {
+         setShowPopupBox("");
+    }
+
+   /* Create Global Store Who Manage Our Global State*/
+    const  StoreDbContext = {
+        cartValue: cartValue,
+        setCartValue: setCartValue,
+        setShowPopupBox: setShowPopupBox,
+        ClosePopup: ClosePopupBox,
+
+        }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <>  
+          <GlobelContext.Provider value={StoreDbContext}>
+              {showPopupBox}  
+          <BrowserRouter>
+              <Routes>
+                  <Route path="/" element={<HomePage />} />
+                  <Route index element={<HomePage />} />
+                  <Route path="/Cart" element={<MyCart />} />
+                  <Route path="/ShowPopup" element={<ShowPopup />} />
+              </Routes>
+              </BrowserRouter>
+          </GlobelContext.Provider>
+      </>   
   );
 }
 

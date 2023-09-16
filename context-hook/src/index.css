@@ -1,13 +1,226 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 0;
+    background-color: #F3F3F4;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-y: scroll;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.Navbar {
+    display: flex;
+    background-color: #a30d3b;
+    border: 1px solid black;
+    height: 56px;
+}
+.NavbarLogo {
+    display: flex;
+    width: 80%;
+}
+.Cart {
+    display: flex;
+    width: 20%;
+}
+.Cart a {
+    text-decoration: none;
+    
+}
+.Cart h6 {
+  position: absolute;
+    margin-left: 45px;
+}
+.NavbarLogo a {
+    margin-left: 16px;
+    color: forestgreen;
+    text-decoration: none;
+}
+.IconCart {
+    cursor: pointer;
+    color: white;
+    margin-left: 7px;
+    margin-top: 12px;
+    position: absolute;
+}
+.IconCartVal {
+    cursor: pointer;
+    color: white;
+    margin-left: 12px;
+    margin-top: 9px;
+    position: absolute;
+}
+.BookCardBody {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-left: 30px;
+}
+.BookCard {
+    width: 186px;
+    height: 304px;
+    color: black;
+    border: 1px solid yellow;
+    margin: 10px;
+    padding: 3px;
+    background-color: #ffffff;
+}
+.BookCardImg {
+    width: 100%;
+    height: 63%;
+    color: white;
+}
+.BookTitle {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    display: block;
+    line-height: 1em; /* a */
+    max-height: 2em; /* a x number of line to show (ex : 2 line)  */
+}
+.BookPubisher {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    display: block;
+    line-height: 1em; /* a */
+    max-height: 1em; /* a x number of line to show (ex : 2 line)  */
+}
+.BookPrice {
+    text-decoration: line-through;
+}
+.BookPriceText {
+    font-weight: 700;
+}
+.CartBtn {
+    padding: 2px;
+    border: 2px solid #f14836;
+    background-color: Background;
+    border-radius: 50px;
+    color: #f14836;
+    cursor: pointer;
+}
+.CartBtn:hover {
+    border: 2px solid Background;
+    background-color: #f14836;
+    border-radius: 50px;
+    color: Background;  
+}
+.CartBody {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    border-top: 2px solid black;
+    padding: 10px;
+    height: 100%;
+    width: 97%;
+}
+.CartBodyLeft {    
+    height: 100%;
+    width: 70%;
+}
+.CartBodyRight {
+    margin: 10px;
+    padding: 3px;
+    height: 100%;
+    width: 25%;
+    background-color: #ffffff;
+    margin-left: 30px;
+}
+
+.CartCard {
+    display:flex;
+    width: 100%;
+    height: 304px;
+    color: black;
+    border: 1px solid yellow;
+    margin: 10px;
+    padding: 3px;
+    background-color: #ffffff;
+}
+
+.CartCardLeft {
+    padding: 20px;
+}
+.CartCardRight {
+    padding: 20px;
+}
+.CartCardImg {
+    width: 100%;
+    height: 100%;
+}
+
+.CartTitle {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    display: block;
+    line-height: 1em; /* a */
+    max-height: 2em; /* a x number of line to show (ex : 2 line)  */
+}
+.DeleteBtn {
+    padding: 2px;
+    border: 2px solid #f14836;
+    background-color: Background;
+    border-radius: 7px;
+    color: #f14836;
+    cursor: pointer;
+}
+
+    .DeleteBtn:hover {
+        border: 2px solid Background;
+        background-color: #f14836;
+        border-radius: 50px;
+        color: Background;
+    }
+
+.CartValue {
+    padding: 1px;
+    border: 2px solid #f14836;
+    background-color: #f0f2f2;
+    border-radius: 7px;
+    width: 66px;
+    margin: 7px;
+    color: #f14836;
+    cursor: pointer;
+    text-align: center;
+}
+.CartBodyRight h3 {
+    text-align: right;
+}
+    .proceedBtn {
+    cursor: pointer;
+    border: 0;
+    text-align: center;
+    vertical-align: middle;
+    background: #FFD814;
+    border-color: #FCD200;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px 0 rgba(213,217,217,.5);
+    width: 80%;
+    padding: 5px;
+    margin: 7px;
+}
+.TotalCartTxt {
+    color: black;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+       
+}
+table, th, td, th {
+    padding: 2px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.CartTable {
+    width: 100%;
+    background-color: #E7E9EB;
+}
+
+

@@ -1,0 +1,119 @@
+﻿.PopupBoxmodal {
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content */
+.PopupBoxModalContent {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0px;
+    border: 1px solid #888;
+    width: 42%;
+    border-radius: 9px;
+    position: relative;
+    height: 272px;
+}
+.PopupHeader {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    border-bottom: 1px solid #e6eaec;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+    /* The Close Button */
+.PopupBoxClose {   
+    position: absolute;
+    top: 5px;
+    right: 7px;
+    color: #fff;
+    text-shadow: none;
+   /* opacity: 0.5;*/
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border-radius: 20px;
+    font-size: 28px;
+}
+.PopupBoxClose span {
+    margin-top: 0px;
+    margin-left: 8px;
+    display: block;
+}
+    .PopupBoxClose:hover, .PopupBoxClose:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.PopupSucces 
+{
+  background: #82ce34;
+
+}
+.PopupError 
+{
+  background: #ee3535;
+}
+.PopupWarn 
+{
+background: #eda645;
+}
+.IconPopup {
+    cursor: pointer;
+    margin-left: 21px;
+    margin-top: -4px;
+    position: absolute;
+}
+.PopupHeaderTitle {
+    padding: 14px;
+    color: aliceblue;
+}
+.PopupSucces:hover, .PopupSucces:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.PopupMessageBody {
+    padding: 14px;
+    height: 54%;
+    overflow-y: auto;
+}
+.PopupMessageBody ul li{
+   padding: 4px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.PopupFooter {
+    padding: 14px;
+    height: 7%;
+    border-top: 1px solid;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    background: #ecf0f1;
+    border-color: #e6eaec;
+}
+
+.Popupbtn {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.4s;
+    line-height: normal;
+    border-radius: 3px;
+    padding: 6px 20px;
+    min-width: 75px;
+    border: none;
+    margin-left: 69%;
+}
+.Popupbtn:hover {
+    cursor: pointer;
+}
