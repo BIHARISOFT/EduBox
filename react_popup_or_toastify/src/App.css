@@ -1,0 +1,42 @@
+.App {
+    
+    display: flex;
+    margin: 20px;
+    padding: 10px;
+}
+
+
+.GreenClr {
+    background: #05b20d;  
+}
+
+.YellowClr {
+    background: #ee3535;
+}
+
+.RedClr {
+    background: #ecb90d;
+}
+
+.btnshap {
+    padding: 8px;
+    margin: 3px;
+    border-radius: 5px;
+    width: 113px;
+    text-align:center;
+}
+    .btnshap:hover{
+        color:white;
+    }
+
+.IconPopup {
+    cursor: pointer;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+.SpinnerIcon {
+    cursor: pointer;
+    margin-top: 3px;
+    margin-left: 3px;
+}
+

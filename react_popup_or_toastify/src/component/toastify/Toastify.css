@@ -1,0 +1,169 @@
+﻿.ToastifyModal {
+    position: relative;
+    z-index: 1;
+    margin-left: 23px;
+    margin-top: 18px;
+    margin-right: 33px;
+    float: right;
+    width: 16%;
+    min-width: 318px;
+    height: 75px;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 11px;
+    animation: FlipToast 1s;
+    animation-timing-function: linear;
+}
+
+@keyframes FlipToast{
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+.ToastifyBody {
+    position: absolute;
+    width: inherit;
+    min-width: inherit;
+    height: inherit;
+    min-height: inherit;
+    border: 1px solid #888;
+    border-radius: inherit;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.ToastifyHeader {
+    width: 100%;
+    height: 18px;
+    display: flex;
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+  
+}
+
+.ToastifyHeaderText {
+    width: 33%;
+    min-width: 104px;
+    height: 17px;
+    border-top-left-radius: 11px;
+    padding: 0px;
+    margin-left: 13px;
+}
+
+
+
+.ToastifyHeaderTxt {
+    font-size: 10px;
+    font-family: cursive;
+    font-weight: 100;
+    padding: 1px 17px;
+    display: block;
+    float: left;
+}
+
+.ToastifyHeaderIcon {
+    width: 10%;
+    height: inherit;
+    
+}
+
+.ToastifyHeaderBtn {
+    width: 67%;
+    height: inherit;
+    display: flex;
+    flex-direction: row-reverse;
+    border-top-right-radius: 11px;
+   
+}
+
+.ToastifyBtn {
+    background: none;
+    border: none;
+    /* margin-left: 88px; */
+    margin-top: -7px;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+    .ToastifyBtn:hover {
+        cursor: pointer;
+        color: white;
+    }
+
+.ToastifyMessageBody {
+    height: 49%;
+    min-height: 26px;
+    overflow-y: hidden;
+    font-size: 13px;
+}
+
+.ToastifyFooter {
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: 11px;
+    border-bottom-right-radius: 11px;
+}
+/* OK Button */
+.ToastifyProgressBar {
+    color: white;
+    background-color: #eaf0f9;
+    border: none;
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 5px;
+    margin-right: 0px;
+    height: 13px;
+    border: 1px solid;
+    border-bottom-left-radius: 11px;
+    border-bottom-right-radius: 11px;
+}
+.ToastifyProgressBarChild {
+    text-align: center;
+    font-size: 10px;
+    height: 13px;
+    border: 1px solid;
+    border-bottom-left-radius: 11px;
+    border-bottom-right-radius: 11px;
+} 
+
+.ToastifyIconPopup {
+    cursor: pointer;
+    margin-left: 1px;
+    margin-top: -2px;
+}
+.ToastifySpinnerIcon {
+    cursor: pointer;
+    margin-top: 3px;
+    margin-left: 3px;
+    border: 1px solid Blue;
+}
+.ToastifyIconSpin {
+    position: absolute;
+    margin-top: 1px;
+    border-radius: 50%;
+    height: 9px;
+    width: 9px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .ToastifyIconSpin {
+        animation: ToastifyHeaderIconSpin infinite 2s linear;
+    }
+}
+
+@keyframes ToastifyHeaderIconSpin {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
